@@ -3,7 +3,7 @@ applications:
 - name: pcfdemo-producer
   memory: 512M 
   instances: 1
-  host: pcfdemo-producer-${random-word}
+  host: ehi-producer
   path: PCFDemo-producer/src
   timeout: 90
   services:
@@ -11,7 +11,7 @@ applications:
 - name: pcfdemo-map
   memory: 512M 
   instances: 1
-  host: pcfdemo-map-${random-word}
+  host: ehi-consumer
   path: PCFDemo-map/target/pcfdemo-map.war
   timeout: 90
   services:
