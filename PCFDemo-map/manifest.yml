@@ -3,7 +3,7 @@ applications:
 - name: pcfdemo-map
   memory: 512M 
   instances: 1
-  host: pcfdemo-map-${random-word}
+  host: ehi-consumer
   path: ./target/pcfdemo-map.war
   timeout: 90
   env:
